@@ -10,6 +10,10 @@
     <!-- it will load fast so i have pasted in file -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.15.0/maps/maps.css'>
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.15.0/maps/maps-web.min.js"></script>
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.15.0/services/services-web.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Be A Yogi</title>
 </head>
 
@@ -630,8 +634,18 @@
         </div>
     </section>
 
+    <section class="our-team-area section-padding-80-50" id="team">
+        <h2 style="text-align: center; ">Know &nbsp; Your &nbsp;Nearest&nbsp; Yoga &nbsp;Centers</h2>
+        <div class ="map-container">
+            <div id='map' style='width:vw; height:80vh;'></div>
+        </div>
+    </section>
+    
+
 
     <!-- section 7 ends -->
+     
+
 
     <!-- section 8 starts -->
     <section class="event-section spad bg-light" id="event">
@@ -814,6 +828,7 @@
     </section>
 
     <!-- section 10 ends -->
+
 
 
     <!-- section 11 starts  -->
